@@ -1,27 +1,71 @@
 import React from 'react';
-import './ExploreFoods.css'; 
+import './FoodItems.css';
 
-const ExploreFoods = () => {
+const FoodItems = () => {
   return (
-    <div className="explore-foods">
-      <h2>Explore Foods</h2>
-      <div className="food-cards">
-        <div className="food-card">
-          <img src="src/assets/pizza.jpg" alt="Pizza" className="food-image" />
-          <p className="food-name">Pizza</p>
+    <div className="custom-food-menu">
+      <h2>Food Menu</h2>
+      <div className="custom-food-grid">
+        <div className="custom-food-card">
+          <img src="src/assets/s1.jpg" alt="Food Title" />
+          <div className="custom-food-info">
+            <h3>Food Title</h3>
+            <p className="custom-price">$2.3</p>
+            <p className="custom-description">Made with Italian Sauce, Chicken, and organic vegetables.</p>
+            <button className="custom-order-btn">Order Now</button>
+          </div>
         </div>
-        <div className="food-card">
-          <img src="src/assets/burger.jpg" alt="Burger" className="food-image" />
-          <p className="food-name">Burger</p>
+        <div className="custom-food-card">
+          <img src="src/assets/s2.jpg" alt="Smoky Burger" />
+          <div className="custom-food-info">
+            <h3>Smoky Burger</h3>
+            <p className="custom-price">$2.3</p>
+            <p className="custom-description">Made with Italian Sauce, Chicken, and organic vegetables.</p>
+            <button className="custom-order-btn">Order Now</button>
+          </div>
         </div>
-        <div className="food-card">
-          <img src="src/assets/momos.jpg" alt="Momo" className="food-image" />
-          <p className="food-name">Momo</p>
+        <div className="custom-food-card">
+          <img src="src/assets/s3.jpg" alt="Nice Burger" />
+          <div className="custom-food-info">
+            <h3>Nice Burger</h3>
+            <p className="custom-price">$2.3</p>
+            <p className="custom-description">Made with Italian Sauce, Chicken, and organic vegetables.</p>
+            <button className="custom-order-btn">Order Now</button>
+          </div>
+        </div>
+        <div className="custom-food-card">
+          <img src="src/assets/s1.jpg" alt="Food Title" />
+          <div className="custom-food-info">
+            <h3>Food Title</h3>
+            <p className="custom-price">$2.3</p>
+            <p className="custom-description">Made with Italian Sauce, Chicken, and organic vegetables.</p>
+            <button className="custom-order-btn">Order Now</button>
+          </div>
+        </div>
+        <div className="custom-food-card">
+          <img src="src/assets/s2.jpg" alt="Food Title" />
+          <div className="custom-food-info">
+            <h3>Food Title</h3>
+            <p className="custom-price">$2.3</p>
+            <p className="custom-description">Made with Italian Sauce, Chicken, and organic vegetables.</p>
+            <button className="custom-order-btn">Order Now</button>
+          </div>
+        </div>
+        <div className="custom-food-card">
+          <img src="src/assets/s5.jpg" alt="Chicken Steam Momo" />
+          <div className="custom-food-info">
+            <h3>Chicken Steam Momo</h3>
+            <p className="custom-price">$2.3</p>
+            <p className="custom-description">Made with Italian Sauce, Chicken, and organic vegetables.</p>
+            <button className="custom-order-btn">Order Now</button>
+          </div>
         </div>
       </div>
+      <a href="#" className="custom-see-all">See All Foods</a>
+     
     </div>
+    
   );
-}
+};
 
-export default ExploreFoods;
-
+export default FoodItems;
