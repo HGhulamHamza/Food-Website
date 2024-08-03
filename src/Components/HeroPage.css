@@ -38,6 +38,22 @@
   .hero-button:hover {
     background-color: #ff4c4c;
   }
+  @media (min-width: 600px) {
+    .hero-content {
+      flex-direction: row;
+    }
+  
+    .hero-search {
+      width: 400px;
+      border-radius: 4px 0 0 4px;
+      margin-bottom: 0;
+    }
+  
+    .hero-button {
+      width: auto;
+      margin-left: 5px;
+      border-radius: 0 4px 4px 0;
+    }}
   
 
  
