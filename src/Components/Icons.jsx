@@ -1,4 +1,7 @@
 import React from 'react';
+import Instagram from '../assets/insta.jpg';
+import Facebook from '../assets/fb.png';
+import Twitter from '../assets/twitter.png';
 
 const Icons = () => {
   const styles = {
@@ -28,9 +31,9 @@ const Icons = () => {
   return (
     <div>
       <div style={styles.container}>
-        <img src="src/assets/fb.png" style={styles.icon} alt="Facebook" />
-        <img src="src/assets/insta.jpg" style={styles.icon} alt="Instagram" />
-        <img src="src/assets/twitter.png" style={styles.icon} alt="Twitter" />
+        <img src={Facebook} style={styles.icon} alt="Facebook" />
+        <img src={Instagram} style={styles.icon} alt="Instagram" />
+        <img src={Twitter} style={styles.icon} alt="Twitter" />
       </div>
       <p style={styles.p}>All rights reserved.Designed by <span style={styles.span}>Ghulam Hamza</span></p>
     </div>
