@@ -1,39 +1,60 @@
 .explore-foods {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .food-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
+  text-align: center;
+  padding: 20px;
+}
+
+.food-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap to the next line */
+  justify-content: center;
+  gap: 20px;
+}
+
+.food-card {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Media query for tablets and mobile devices */
+@media (max-width: 768px) {
   .food-card {
-    position: relative;
-    width: 300px;
-    height: 450px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: auto; /* Allow height to adjust based on content */
   }
-  
-  .food-image {
+}
+
+/* Media query for small mobile devices */
+@media (max-width: 480px) {
+  .food-card {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto; /* Allow height to adjust based on content */
   }
-  
+
   .food-name {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-    padding: 10px 0;
+    font-size: 14px; /* Slightly smaller font size for smaller screens */
+    padding: 8px 0;
   }
-  
+}
